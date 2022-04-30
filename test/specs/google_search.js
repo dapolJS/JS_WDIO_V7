@@ -30,5 +30,6 @@ describe('Google Suite', () => {
         await webdriverioPage.buttonGetStarted.isClickable()
         await webdriverioPage.buttonGetStarted.click()
         await browser.pause(short_timeout * 2)
+        // TODO: add expects and add tests for every button on main page that are next to "Getting started"
     });
 });
