@@ -6,3 +6,6 @@ class WebdriverioPage {
 }
 
 module.exports = new WebdriverioPage
+
+
+
