@@ -29,6 +29,9 @@ describe('Google Suite', () => {
         // click on webdriverio pages getting started button
         await webdriverioPage.buttonGetStarted.isClickable()
         await webdriverioPage.buttonGetStarted.click()
+        expect(await browser.getUrl()).toEqual(webdriverioPage.urlWebdriverioGettingStarted)
+        await browser.back()
+        expect(await browser.getUrl()).toEqual(webdriverioPage.urlWebdriverioMain)
         await browser.pause(short_timeout * 2)
         // TODO: add expects and add tests for every button on main page that are next to "Getting started"
     });
